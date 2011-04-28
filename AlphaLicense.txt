@@ -6,15 +6,19 @@
 || @contact alexanderbrevig@gmail.com
 ||
 || @description
-|| | Descripbe the rights and expectations when using my code
+|| | Describe the rights and expectations when using my code
 || #
 ||
 || @license
 || | Copyright (c) 2009 Alexander Brevig. All rights reserved.
 || | http://www.gnu.org/licenses/lgpl.html
 || #
+
+updated for Arduino 1.0 by Tom Igoe, 27 April 2011
+
 ||
 */
+
 
 All content is released into the public domain, under the terms of the GNU LGPL (latest version).
 All code is intellectual property, unless stated otherwise.
