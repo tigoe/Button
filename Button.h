@@ -6,7 +6,7 @@
 ||
 || @description
 || | This is a Hardware Abstraction Library for Buttons
-|| | It providea an easy way of handling buttons
+|| | It provides an easy way of handling buttons
 || #
 ||
 || @license LICENSE_REPLACE
