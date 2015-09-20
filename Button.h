@@ -6,7 +6,7 @@
 ||
 || @description
 || | This is a Hardware Abstraction Library for Buttons
-|| | It providea an easy way of handling buttons
+|| | It provides an easy way of handling buttons
 || #
 ||
 || @license LICENSE_REPLACE
@@ -56,7 +56,7 @@ class Button {
     uint8_t pin;
     uint8_t mode;
     uint8_t state;
-    unsigned int pressedStartTime;
+    unsigned long pressedStartTime;
     unsigned int holdEventThreshold;
     buttonEventHandler cb_onPress;
     buttonEventHandler cb_onRelease;

@@ -29,7 +29,7 @@
 || @parameter buttonMode indicates BUTTON_PULLUP or BUTTON_PULLDOWN resistor
 */
 Button::Button(uint8_t buttonPin, uint8_t buttonMode){
-	pin=buttonPin;
+  pin=buttonPin;
   pinMode(pin,INPUT);
   
 	buttonMode==BUTTON_PULLDOWN ? pulldown() : pullup(buttonMode);
@@ -56,7 +56,7 @@ void Button::pullup(uint8_t buttonMode)
 	mode=BUTTON_PULLUP;
   if (buttonMode == BUTTON_PULLUP_INTERNAL) 
   {
-	  digitalWrite(pin,HIGH);
+	  pinMode(pin,INPUT_PULLUP);
   }
 }
 
@@ -78,7 +78,8 @@ void Button::pulldown(void)
 || @return true if button is pressed
 */
 bool Button::isPressed(void)
-{  
+{
+  
   //save the previous value
   bitWrite(state,PREVIOUS,bitRead(state,CURRENT));
   
