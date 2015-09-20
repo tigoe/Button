@@ -56,7 +56,7 @@ void Button::pullup(uint8_t buttonMode)
 	mode=BUTTON_PULLUP;
   if (buttonMode == BUTTON_PULLUP_INTERNAL) 
   {
-	  digitalWrite(pin,HIGH);
+	  pinMode(pin,INPUT_PULLUP);
   }
 }
 
