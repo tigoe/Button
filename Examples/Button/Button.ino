@@ -24,7 +24,7 @@
 || Wiring:
 || GND -----/ ------ pin 12
 */
-Button button = Button(12,PULLUP);
+Button button = Button(12,BUTTON_PULLUP);
 
 void setup(){
   pinMode(13,OUTPUT); //debug to led 13
